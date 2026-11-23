@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Campus Corner – Mini Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="logo">Campus<span>Corner</span></div>
+    <button class="cart-btn" id="jump">🛒 Cart (<span id="count">0</span>)</button>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Products</h2>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="catalogue"></div>
+  </section>
+
+  <aside class="panel" id="cartPanel">
+    <h2>Your cart</h2>
+    <div id="cartBody"></div>
+    <button class="checkout" id="checkoutBtn">Checkout preview</button>
+    <button class="clear" id="clearBtn" hidden>Clear cart</button>
+  </aside>
+</main>
+
+<dialog id="dlg">
+  <h2>Order summary</h2>
+  <div class="demo"><strong>Demonstration only.</strong> No payment is taken and no card details are collected.</div>
+  <div id="dlgBody"></div>
+  <div class="row">
+    <button id="dlgClose">Back to shop</button>
+    <button class="primary" id="dlgDone">Place demo order</button>
+  </div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
